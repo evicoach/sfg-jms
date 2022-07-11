@@ -14,7 +14,7 @@ public class JavaMessagingServiceApplication {
 				.setPersistenceEnabled(false)
 				.setJournalDirectory("target/data/journal")
 				.setSecurityEnabled(false)
-				.addAcceptorConfiguration("invm", "vm://")
+				.addAcceptorConfiguration("invm", "vm://0")
 		);
 		activeMQServer.start();
 		SpringApplication.run(JavaMessagingServiceApplication.class, args);
